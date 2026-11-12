@@ -55,12 +55,24 @@
     #depoimentos .review-entry:nth-child(3) .review-avatar { background: #b82e65; color: #fff; }
     #conteudos .instagram-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
     #conteudos .instagram-post { min-width: 0; padding: 1rem; border: 1px solid var(--rule); background: #fff; }
-    #conteudos .instagram-embed-wrap { min-width: 0; width: 100%; overflow: hidden; }
+    #conteudos .instagram-embed-wrap { min-width: 0; width: 100%; }
     #conteudos blockquote.instagram-media { width: 100% !important; max-width: 540px !important; min-width: 0 !important; margin: 0 auto !important; }
     #conteudos .instagram-embed-wrap iframe { display: block; width: 100% !important; max-width: 100% !important; }
     #conteudos .instagram-fallback { display: inline-block; margin: .75rem .25rem .1rem; color: var(--brand-blue); font-size: .75rem; font-weight: 600; text-decoration: underline; text-underline-offset: .2em; }
-    @media (min-width: 740px) { #conteudos .instagram-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    @media (min-width: 1100px) { #conteudos .instagram-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (min-width: 840px) { #conteudos .instagram-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (min-width: 1200px) { #conteudos .instagram-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+    @media (max-width: 399px) {
+      #conteudos .instagram-embed-wrap {
+        width: 326px;
+        max-width: none;
+        margin-inline: auto;
+        zoom: calc((100vw - 74px) / 326px);
+      }
+      #conteudos blockquote.instagram-media { width: 326px !important; max-width: 326px !important; }
+    }
+    @supports not (zoom: calc((100vw - 74px) / 326px)) {
+      @media (max-width: 399px) { #conteudos .instagram-embed-wrap { display: none; } }
+    }
     @media (max-width: 767px) {
       #depoimentos .review-grid { grid-template-columns: 1fr; }
       #depoimentos .review-entry, #depoimentos .review-entry:not(:nth-child(3n + 1)) { padding: 1.25rem 0; border-left: 0; }
@@ -113,6 +125,19 @@
         background: #fff;
         color: #172d43;
       }
+      #floating-whatsapp {
+        right: max(12px, env(safe-area-inset-right));
+        bottom: max(12px, env(safe-area-inset-bottom));
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+      }
+      .floating-whatsapp-label { display: none; }
+    }
+    @media (max-width: 639px) {
+      .hero-editorial .hero-copy > div:last-child { margin-inline: -1.25rem; padding-inline: 1.25rem; }
     }
     .editorial-number { color: var(--blue-accent); font: italic 1.1rem 'Cormorant Garamond', serif; }
     #especialidades, #consultorio, #metodo, #sobre, #conteudos, #depoimentos, #localizacao { padding-top: clamp(3.5rem, 7vw, 6rem); padding-bottom: clamp(3.5rem, 7vw, 6rem); }
