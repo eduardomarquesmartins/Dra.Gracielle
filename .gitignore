@@ -1,0 +1,12 @@
+# Originais locais duplicados; o site usa assets/videos/.
+/Conteudo/
+
+# Arquivos locais do sistema e ferramentas.
+Thumbs.db
+Desktop.ini
+.DS_Store
+node_modules/
+.env
+.env.*
+!.env.example
+*.log

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Gracieli Sari | Fisioterapia Especializada &amp; Osteopatia em Porto Alegre</title>
+  <meta name="description" content="Fisioterapia e Osteopatia com atenção à rotina e às necessidades das mulheres. Atendimento individual com a Dra. Gracieli Sari no Moinhos de Vento, Porto Alegre.">
+  <meta name="keywords" content="Fisioterapia Porto Alegre, Osteopatia Porto Alegre, Gracieli Sari, Coluna, Hérnia de Disco, DTM, Moinhos de Vento, Fisioterapeuta Porto Alegre">
+  <meta name="author" content="Dra. Gracieli Sari">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dra. Gracieli Sari | Fisioterapia &amp; Osteopatia Clínica">
+  <meta property="og:description" content="Um olhar atento para o corpo e a rotina das mulheres. Fisioterapia e Osteopatia com atendimento individual em Porto Alegre.">
+  <meta property="og:url" content="https://www.instagram.com/dra.gracielisari/">
+  <meta property="og:image" content="assets/logo.png">
+
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind-config.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased font-sans flex flex-col min-h-screen selection:bg-brand-royal selection:text-white">
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="flex items-center justify-between gap-4 h-16 sm:h-[72px]">
+
+        <a href="#" class="flex items-center gap-3 shrink-0 group">
+          <img src="assets/logo.png" alt="Logo Dra. Gracieli Sari" class="w-9 h-10 object-contain shrink-0">
+          <div class="flex flex-col leading-none">
+            <span class="font-serif text-xl sm:text-[22px] font-semibold tracking-tight text-ink-heading group-hover:text-brand-royal transition-colors">
+              Dra. Gracieli Sari
+            </span>
+            <span class="text-[10px] font-medium text-ink-muted tracking-[0.16em] uppercase mt-1">
+              Fisioterapia &amp; Osteopatia
+            </span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-7 text-[13px] font-medium text-ink-body" aria-label="Navegação Principal">
+          <a href="#especialidades" class="hover:text-brand-royal transition-colors">Especialidades</a>
+          <a href="#metodo" class="hover:text-brand-royal transition-colors">Atendimento</a>
+          <a href="#sobre" class="hover:text-brand-royal transition-colors">Sobre</a>
+          <a href="#conteudos" class="hover:text-brand-royal transition-colors">Conteúdos</a>
+          <a href="#depoimentos" class="hover:text-brand-royal transition-colors">Relatos</a>
+          <a href="#localizacao" class="hover:text-brand-royal transition-colors">Consultório</a>
+        </nav>
+
+        <div class="flex items-center gap-2.5 shrink-0">
+          <a href="https://wa.me/5551999491229?text=Ol%C3%A1%2C%20Dra.%20Gracieli!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center bg-brand-royal hover:bg-brand-navy text-white text-[13px] font-medium px-4 py-2.5 rounded-[3px] transition-colors whitespace-nowrap">
+            Agendar consulta
+          </a>
+
+          <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 text-ink-heading hover:bg-brand-mist border border-brand-border rounded-[3px] transition-colors" aria-label="Abrir Menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-brand-border px-5 py-4 space-y-1">
+      <a href="#especialidades" class="block py-2.5 text-sm font-medium text-ink-heading border-b border-brand-border/60">Especialidades</a>
+      <a href="#metodo" class="block py-2.5 text-sm font-medium text-ink-heading border-b border-brand-border/60">Atendimento</a>
+      <a href="#sobre" class="block py-2.5 text-sm font-medium text-ink-heading border-b border-brand-border/60">Sobre a Dra. Gracieli</a>
+      <a href="#conteudos" class="block py-2.5 text-sm font-medium text-ink-heading border-b border-brand-border/60">Conteúdos</a>
+      <a href="#depoimentos" class="block py-2.5 text-sm font-medium text-ink-heading border-b border-brand-border/60">Relatos</a>
+      <a href="#localizacao" class="block py-2.5 text-sm font-medium text-ink-heading border-b border-brand-border/60">Localização &amp; Horários</a>
+      <a href="#contato" class="block py-2.5 text-sm font-medium text-ink-heading">Agendar Horário</a>
+      <div class="pt-3">
+        <a href="https://wa.me/5551999491229?text=Ol%C3%A1%2C%20Dra.%20Gracieli!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center bg-brand-royal text-white font-medium py-3 rounded-[3px] text-sm">
+          Agendar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <section class="hero-editorial border-b border-brand-border bg-white">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+
+          <div class="hero-copy lg:col-span-7 py-9 sm:py-12 lg:py-14 lg:pr-12 flex flex-col justify-between gap-7">
+            <div class="space-y-5">
+              <h1 class="font-serif text-4xl sm:text-5xl lg:text-[3.35rem] text-ink-heading font-semibold leading-[1.06] tracking-[-0.015em] text-balance">
+                Entre tantas demandas, <span class="italic font-medium text-brand-royal">seu corpo também precisa de cuidado.</span>
+              </h1>
+
+              <p class="text-ink-body text-base sm:text-[17px] leading-relaxed max-w-xl">
+                Fisioterapia e Osteopatia com um olhar atento para as mulheres e suas rotinas. Em um atendimento individual, vamos entender o que você sente e construir um cuidado que faça sentido para o seu corpo e seu momento de vida.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-x-6 gap-y-3 pt-1">
+                <a href="https://wa.me/5551999491229?text=Ol%C3%A1%2C%20Dra.%20Gracieli!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2.5 bg-brand-royal hover:bg-brand-navy text-white font-medium text-sm px-6 py-3.5 rounded-[3px] transition-colors">
+                  <span>Agendar avaliação no WhatsApp</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+
+                <a href="#especialidades" class="text-sm font-medium text-ink-heading hover:text-brand-royal underline underline-offset-4 decoration-brand-border hover:decoration-brand-royal transition-colors py-2">
+                  Conhecer as possibilidades de cuidado
+                </a>
+              </div>
+            </div>
+
+            <div class="pt-5 border-t border-brand-border grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+              <div>
+                <p class="font-semibold text-ink-heading">Cuidado individualizado</p>
+                <p class="text-ink-muted mt-0.5">Tratamento pensado para sua rotina e suas necessidades</p>
+              </div>
+              <div>
+                <p class="font-semibold text-ink-heading">Seg a Sex, 10:00 às 18:00</p>
+                <p class="text-ink-muted mt-0.5">Edifício Costa Brava &middot; Sala 207</p>
+              </div>
+              <div>
+                <p class="font-semibold text-ink-heading">Atendimento particular</p>
+                <p class="text-ink-muted mt-0.5">Recibo para reembolso em planos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-photo-wrap lg:col-span-5 relative border-t lg:border-t-0 border-brand-border overflow-hidden">
+            <img src="assets/conteudos/fotos/gracieli-02.jpg" alt="Dra. Gracieli Sari em seu consultório" class="hero-photo absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-x-0 bottom-0 px-6 py-5 sm:px-8 bg-gradient-to-t from-black/55 to-transparent text-white">
+              <p class="font-serif text-2xl italic">Dra. Gracieli Sari</p>
+              <p class="text-[10px] tracking-[.2em] uppercase mt-1 text-white/80">Fisioterapia &amp; Osteopatia Clínica</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="py-12 sm:py-14 bg-brand-mist border-b border-brand-border">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8">
+        <div class="about-profile-layout">
+          <figure class="about-profile-photo-frame">
+            <img class="about-profile-photo" src="assets/conteudos/fotos/gracieli-01.jpg" alt="Dra. Gracieli Sari em seu consultório">
+          </figure>
+          <div class="about-profile-copy space-y-5">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cerulean">Sobre a profissional</p>
+            <h2 class="font-serif text-ink-heading font-semibold text-balance">Prazer, eu sou a Gracieli Sari.</h2>
+            <p>Sou fisioterapeuta há mais de 16 anos e, ao longo dessa trajetória, fui entendendo que olhar apenas para o local da dor nem sempre é suficiente.</p>
+            <p>Por isso, meu trabalho reúne conhecimentos da fisioterapia, Osteopatia, RPG, biomecânica e respiração para compreender o corpo de forma mais completa: como ele se movimenta, compensa, se organiza e responde às demandas do dia a dia.</p>
+            <p>Cada atendimento começa com uma avaliação individual, considerando sua rotina, sua queixa e as necessidades do seu corpo. A partir disso, construo uma estratégia de tratamento personalizada, sem protocolos prontos.</p>
+            <p>Meu trabalho é voltado principalmente para mulheres que carregam muitas demandas ao longo da vida e começam a sentir esses impactos no corpo.</p>
+            <div class="about-profile-credentials">CREFITO-5 nº 166020-F <span aria-hidden="true">·</span> DO RBrO 185 <span aria-hidden="true">·</span> Feevale C-4229-RS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="especialidades" class="py-12 sm:py-14 bg-brand-mist border-b border-brand-border">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14">
+          <header class="lg:col-span-4 lg:pt-3">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cerulean">Áreas de atuação</p>
+            <h2 class="font-serif text-3xl sm:text-[2.5rem] text-ink-heading font-semibold leading-[1.08] mt-2 text-balance">
+              Como seu corpo tem sentido a sua rotina?
+            </h2>
+            <p class="text-sm text-ink-muted leading-relaxed mt-4 max-w-sm">
+              Horas sentada, trabalho, exercício, cuidado com outras pessoas: cada rotina traz demandas diferentes. A avaliação considera o que você sente e como isso interfere no seu dia a dia.
+            </p>
+            <a href="https://wa.me/5551999491229?text=Ol%C3%A1%2C%20Dra.%20Gracieli!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-brand-royal hover:text-brand-navy underline underline-offset-4 decoration-brand-border hover:decoration-brand-royal transition-colors">
+              Conversar pelo WhatsApp <span aria-hidden="true">&rarr;</span>
+            </a>
+          </header>
+
+          <div id="specialty-list" class="specialty-list lg:col-span-8" aria-label="Especialidades">
+            <details class="specialty-item" open>
+              <summary class="specialty-summary"><span class="specialty-name">Osteopatia Integrada</span><span class="specialty-toggle" aria-hidden="true">+</span></summary>
+              <div class="specialty-detail"><p>Um olhar para o corpo como um todo, considerando seus movimentos, sua respiração e as demandas da sua rotina. A abordagem manual é definida a partir da avaliação individual.</p></div>
+            </details>
+            <details class="specialty-item">
+              <summary class="specialty-summary"><span class="specialty-name">Coluna e Dores Crônicas</span><span class="specialty-toggle" aria-hidden="true">+</span></summary>
+              <div class="specialty-detail"><p>Para dores nas costas ou no pescoço que dificultam trabalhar, descansar ou se movimentar. Queixas como hérnia de disco e desconfortos relacionados ao nervo ciático são avaliadas individualmente.</p></div>
+            </details>
+            <details class="specialty-item">
+              <summary class="specialty-summary"><span class="specialty-name">DTM e Dores Orofaciais</span><span class="specialty-toggle" aria-hidden="true">+</span></summary>
+              <div class="specialty-detail"><p>Atenção aos desconfortos na mandíbula, ao bruxismo e às dores orofaciais, considerando também hábitos e tensões que você percebe ao longo do dia.</p></div>
+            </details>
+            <details class="specialty-item">
+              <summary class="specialty-summary"><span class="specialty-name">Fisioterapia Traumato-Ortopédica</span><span class="specialty-toggle" aria-hidden="true">+</span></summary>
+              <div class="specialty-detail"><p>Reabilitação para demandas musculoesqueléticas, como tendões, ombro, joelho e recuperação pós-operatória, conforme cada caso.</p></div>
+            </details>
+            <details class="specialty-item">
+              <summary class="specialty-summary"><span class="specialty-name">Reabilitação Postural e Mobilidade</span><span class="specialty-toggle" aria-hidden="true">+</span></summary>
+              <div class="specialty-detail"><p>Para perceber como você se movimenta no trabalho, ao carregar peso ou nas tarefas de casa. O acompanhamento considera rigidez, desconfortos e possibilidades de adaptar o movimento à sua realidade.</p></div>
+            </details>
+            <details class="specialty-item">
+              <summary class="specialty-summary"><span class="specialty-name">Fisioterapia Preventiva e Longevidade</span><span class="specialty-toggle" aria-hidden="true">+</span></summary>
+              <div class="specialty-detail"><p>Cuidado com a mobilidade e a autonomia nas diferentes fases da vida, respeitando seu ritmo, suas necessidades e as atividades que são importantes para você.</p></div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="metodo" class="py-12 sm:py-14 bg-brand-navy text-white">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-end mb-9">
+          <div class="lg:col-span-7 space-y-2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-300">Na consulta</p>
+            <h2 class="font-serif text-3xl sm:text-[2.25rem] font-semibold text-white leading-tight">
+              Como funciona o atendimento
+            </h2>
+          </div>
+          <div class="lg:col-span-5 lg:text-right space-y-2">
+            <p class="text-sm text-slate-300">
+              Não parto de um protocolo pronto. Primeiro, preciso entender o que você sente e como isso aparece na sua vida.
+            </p>
+            <a href="https://wa.me/5551999491229?text=Ol%C3%A1%2C%20Dra.%20Gracieli!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-sky-200 hover:text-white underline underline-offset-4 transition-colors">
+              <span>Agendar uma avaliação</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-white/15 pt-7 gap-8">
+          <div class="space-y-2">
+            <p class="font-serif italic text-sky-300 text-base">Conversa</p>
+            <h3 class="font-semibold text-white text-base">Primeiro, eu escuto você</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Conversamos sobre o que incomoda, quando começou e em quais momentos do dia a dor aparece.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="font-serif italic text-sky-300 text-base">Avaliação</p>
+            <h3 class="font-semibold text-white text-base">Observo seus movimentos</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Avalio como seu corpo se movimenta, onde há dificuldade e o que precisa de atenção, respeitando seus limites.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="font-serif italic text-sky-300 text-base">Tratamento</p>
+            <h3 class="font-semibold text-white text-base">Escolho o cuidado para o seu caso</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              A partir da avaliação, escolho as técnicas e os exercícios. Vamos ajustando o tratamento conforme você responde.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="font-serif italic text-sky-300 text-base">Dia a dia</p>
+            <h3 class="font-semibold text-white text-base">O cuidado continua na rotina</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Conversamos sobre o que você pode ajustar no trabalho, no descanso e nas suas atividades, sem exigir uma rotina impossível.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="conteudos" class="py-12 sm:py-14 bg-white border-b border-brand-border">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end mb-7">
+          <div class="lg:col-span-7">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cerulean">Instagram @dra.gracielisari</p>
+            <h2 class="font-serif text-3xl sm:text-[2.25rem] text-ink-heading font-semibold leading-tight mt-1">
+              Mais cuidado e movimento no seu dia a dia
+            </h2>
+          </div>
+          <p class="lg:col-span-5 text-sm text-ink-muted leading-relaxed">
+            Confira uma seleção de publicações do perfil @dra.gracielisari.
+          </p>
+        </div>
+
+        <div class="instagram-grid">
+          <article class="instagram-post">
+            <div class="instagram-embed-wrap">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DdUpuR3jyso/" data-instgrm-version="14" style="background:#fff; border:0; max-width:540px; width:100%;"><a href="https://www.instagram.com/p/DdUpuR3jyso/" target="_blank" rel="noopener noreferrer">Ver publicação no Instagram</a></blockquote>
+            </div>
+            <a class="instagram-fallback" href="https://www.instagram.com/p/DdUpuR3jyso/" target="_blank" rel="noopener noreferrer">Abrir publicação no Instagram &rarr;</a>
+          </article>
+          <article class="instagram-post">
+            <div class="instagram-embed-wrap">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DdXOXKvvU-w/" data-instgrm-version="14" style="background:#fff; border:0; max-width:540px; width:100%;"><a href="https://www.instagram.com/p/DdXOXKvvU-w/" target="_blank" rel="noopener noreferrer">Ver publicação no Instagram</a></blockquote>
+            </div>
+            <a class="instagram-fallback" href="https://www.instagram.com/p/DdXOXKvvU-w/" target="_blank" rel="noopener noreferrer">Abrir publicação no Instagram &rarr;</a>
+          </article>
+          <article class="instagram-post">
+            <div class="instagram-embed-wrap">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DdZw2C0vtw8/" data-instgrm-version="14" style="background:#fff; border:0; max-width:540px; width:100%;"><a href="https://www.instagram.com/p/DdZw2C0vtw8/" target="_blank" rel="noopener noreferrer">Ver publicação no Instagram</a></blockquote>
+            </div>
+            <a class="instagram-fallback" href="https://www.instagram.com/p/DdZw2C0vtw8/" target="_blank" rel="noopener noreferrer">Abrir publicação no Instagram &rarr;</a>
+          </article>
+          <article class="instagram-post">
+            <div class="instagram-embed-wrap">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DfnX0EzPSZY/" data-instgrm-version="14" style="background:#fff; border:0; max-width:540px; width:100%;"><a href="https://www.instagram.com/reel/DfnX0EzPSZY/" target="_blank" rel="noopener noreferrer">Ver publicação no Instagram</a></blockquote>
+            </div>
+            <a class="instagram-fallback" href="https://www.instagram.com/reel/DfnX0EzPSZY/" target="_blank" rel="noopener noreferrer">Abrir publicação no Instagram &rarr;</a>
+          </article>
+          <article class="instagram-post">
+            <div class="instagram-embed-wrap">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DfiO129oVBU/" data-instgrm-version="14" style="background:#fff; border:0; max-width:540px; width:100%;"><a href="https://www.instagram.com/p/DfiO129oVBU/" target="_blank" rel="noopener noreferrer">Ver publicação no Instagram</a></blockquote>
+            </div>
+            <a class="instagram-fallback" href="https://www.instagram.com/p/DfiO129oVBU/" target="_blank" rel="noopener noreferrer">Abrir publicação no Instagram &rarr;</a>
+          </article>
+          <article class="instagram-post">
+            <div class="instagram-embed-wrap">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DfaisxDBLPO/" data-instgrm-version="14" style="background:#fff; border:0; max-width:540px; width:100%;"><a href="https://www.instagram.com/reel/DfaisxDBLPO/" target="_blank" rel="noopener noreferrer">Ver publicação no Instagram</a></blockquote>
+            </div>
+            <a class="instagram-fallback" href="https://www.instagram.com/reel/DfaisxDBLPO/" target="_blank" rel="noopener noreferrer">Abrir publicação no Instagram &rarr;</a>
+          </article>
+        </div>
+        <script async src="https://www.instagram.com/embed.js"></script>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="py-12 sm:py-14 bg-white border-b border-brand-border">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8">
+
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-7">
+          <div>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cerulean">Relatos publicados no Google</p>
+            <h2 class="font-serif text-3xl text-ink-heading font-semibold mt-1">
+              Avaliações de pacientes
+            </h2>
+          </div>
+          <p class="text-xs text-ink-muted">Experiências compartilhadas por pacientes.</p>
+        </div>
+
+        <div class="review-grid">
+          <blockquote class="review-entry">
+            <footer class="review-byline text-xs">
+              <span class="review-avatar" aria-hidden="true">FP</span>
+              <span><strong class="review-author">Flávia Perrone</strong><span class="block text-[10px] uppercase tracking-[0.12em] text-ink-muted mt-1">Trecho da avaliação</span></span>
+            </footer>
+            <p class="review-quote">Excelente profissional, muito empática e atenciosa! Consegui duas consultas emergenciais antes de uma viagem longa, pois estava com tonturas e dor nas costas. Consegui viajar bem!</p>
+          </blockquote>
+
+          <blockquote class="review-entry">
+            <footer class="review-byline text-xs">
+              <span class="review-avatar" aria-hidden="true">LZ</span>
+              <strong class="review-author">Luciane Zanette</strong>
+            </footer>
+            <p class="review-quote">Cheguei ao consultório da Gracieli com muitas dores. Dor de cabeça, dores cervicais, mandíbula. Fui recebida e atendida com muito profissionalismo e atenção. Gracieli combina mais de técnica oque potencializa o tratamento. A partir do segundo atendimento ja me sentia muito mrlhor.</p>
+          </blockquote>
+
+          <blockquote class="review-entry">
+            <footer class="review-byline text-xs">
+              <span class="review-avatar" aria-hidden="true">GD</span>
+              <strong class="review-author">Giovanna Damian</strong>
+            </footer>
+            <p class="review-quote">A Dra é sensacional, me ajudou a liberar as dores e a manejar o stress e as tensões corporais pra que não voltassem da mesma forma, recomendo muito os atendimentos da Graci</p>
+          </blockquote>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="consultorio" class="py-12 sm:py-14 border-b border-brand-border">
+      <div class="clinic-inner mx-auto px-5 sm:px-8">
+        <header class="clinic-heading">
+          <div>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cerulean">Um pouco mais</p>
+            <h2 class="font-serif text-3xl sm:text-[2.5rem] text-ink-heading font-semibold leading-tight mt-2">Olhar mais próximo do meu trabalho</h2>
+          </div>
+          <p class="text-sm sm:text-base text-ink-body leading-relaxed">Conheça o consultório e acompanhe mais.</p>
+        </header>
+        <div class="clinic-grid">
+          <figure class="clinic-video-block">
+            <video class="clinic-video" controls playsinline preload="none" poster="assets/videos/poster-consultorio.jpg" width="1088" height="1920" aria-label="Vídeo do consultório da Dra. Gracieli Sari">
+              <source src="assets/videos/consultorio.mp4" type="video/mp4">
+              Seu navegador não consegue reproduzir este vídeo. <a href="assets/videos/consultorio.mp4">Abrir vídeo do consultório</a>.
+            </video>
+            <figcaption class="clinic-caption"><h3>Conheça o consultório</h3><p>Um passeio pelo espaço de atendimento.</p></figcaption>
+          </figure>
+          <figure class="clinic-video-block">
+            <video class="clinic-video" controls playsinline preload="none" poster="assets/videos/poster-respiracao.jpg" width="1088" height="1920" aria-label="Vídeo sobre respiração">
+              <source src="assets/videos/reel-respiracao.mp4" type="video/mp4">
+              Seu navegador não consegue reproduzir este vídeo. <a href="assets/videos/reel-respiracao.mp4">Abrir vídeo sobre respiração</a>.
+            </video>
+            <figcaption class="clinic-caption"><h3>Respiração</h3><p>Um conteúdo sobre respiração e sistema respiratório.</p></figcaption>
+          </figure>
+          <figure class="clinic-video-block">
+            <video class="clinic-video" controls playsinline preload="none" poster="assets/videos/poster-escapula-torax.jpg" width="1088" height="1920" aria-label="Vídeo sobre escápula e tórax">
+              <source src="assets/videos/reel-escapula-torax.mp4" type="video/mp4">
+              Seu navegador não consegue reproduzir este vídeo. <a href="assets/videos/reel-escapula-torax.mp4">Abrir vídeo sobre escápula e tórax</a>.
+            </video>
+            <figcaption class="clinic-caption"><h3>Escápula e tórax</h3><p>Uma conversa sobre a relação entre escápula e tórax.</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="py-12 sm:py-14 bg-white">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8 space-y-12">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center pb-12 border-b border-brand-border">
+          <div class="lg:col-span-5 space-y-5">
+            <div>
+              <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cerulean">Localização &amp; Horários</p>
+              <h2 class="font-serif text-3xl text-ink-heading font-semibold leading-tight mt-1">
+                Edifício Costa Brava, Moinhos de Vento
+              </h2>
+            </div>
+
+            <div class="border-t border-b border-brand-border divide-y divide-brand-border text-sm">
+              <div class="py-3 grid grid-cols-3 gap-3">
+                <span class="font-medium text-ink-muted">Endereço</span>
+                <div class="col-span-2 text-ink-heading">
+                  <p class="font-medium">Rua Dona Laura, 228 - Sala 207</p>
+                  <p class="text-xs text-ink-muted">Edifício Costa Brava &middot; Moinhos de Vento / Rio Branco &middot; Porto Alegre - RS &bull; CEP 90430-090</p>
+                </div>
+              </div>
+              <div class="py-3 grid grid-cols-3 gap-3">
+                <span class="font-medium text-ink-muted">Horários</span>
+                <div class="col-span-2 text-ink-heading">
+                  Segunda a Sexta-feira: <strong>10:00 às 18:00</strong>
+                </div>
+              </div>
+              <div class="py-3 grid grid-cols-3 gap-3">
+                <span class="font-medium text-ink-muted">Contatos</span>
+                <div class="col-span-2 space-y-0.5">
+                  <p>WhatsApp: <a href="https://wa.me/5551999491229" target="_blank" rel="noopener noreferrer" class="font-semibold text-brand-royal hover:underline">(51) 99949-1229</a></p>
+                  <p>Telefone: <a href="tel:51999757989" class="text-ink-body hover:underline">(51) 99975-7989</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-4 text-xs font-semibold">
+              <a href="https://maps.google.com/?q=Rua+Dona+Laura+228+Porto+Alegre" target="_blank" rel="noopener noreferrer" class="text-ink-heading hover:text-brand-royal underline underline-offset-4 transition-colors">
+                Abrir no Google Maps &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="h-64 sm:h-72 border border-brand-border bg-brand-mist overflow-hidden">
+              <iframe
+                title="Mapa de Localização - Dra. Gracieli Sari"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.218529948259!2d-51.20398242358897!3d-30.030588674931086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197837775ef8bb%3A0x6b4dbdf5c56a6ec1!2sR.%20Dona%20Laura%2C%20228%20-%20Rio%20Branco%2C%20Porto%20Alegre%20-%20RS%2C%2090430-090!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <div id="contato" class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+          <div class="lg:col-span-4 space-y-3">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cerulean">Agendamento Direto</p>
+            <h2 class="font-serif text-3xl text-ink-heading font-semibold leading-tight">
+              Vamos conversar sobre o que você sente?
+            </h2>
+            <p class="text-sm text-ink-body leading-relaxed">
+              Conte o que tem incomodado e como isso aparece na sua rotina. Ao preencher, você inicia uma conversa no WhatsApp para combinar sua avaliação individual.
+            </p>
+          </div>
+
+          <form id="booking-form" class="lg:col-span-8 bg-brand-mist border border-brand-border p-6 sm:p-7 space-y-4" onsubmit="handleFormSubmit(event)">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="space-y-1.5">
+                <label for="name" class="block text-xs font-semibold text-ink-heading">Nome Completo *</label>
+                <input type="text" id="name" required placeholder="Ex.: Carolina Silva" class="w-full px-3.5 py-2.5 rounded-[3px] bg-white border border-brand-border text-ink-heading placeholder-ink-subtle focus:outline-none focus:border-brand-royal text-sm">
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="phone" class="block text-xs font-semibold text-ink-heading">WhatsApp *</label>
+                <input type="tel" id="phone" required placeholder="(51) 99999-9999" class="w-full px-3.5 py-2.5 rounded-[3px] bg-white border border-brand-border text-ink-heading placeholder-ink-subtle focus:outline-none focus:border-brand-royal text-sm">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="space-y-1.5">
+                <label for="reason" class="block text-xs font-semibold text-ink-heading">Principal Queixa</label>
+                <select id="reason" class="w-full px-3.5 py-2.5 rounded-[3px] bg-white border border-brand-border text-ink-heading focus:outline-none focus:border-brand-royal text-sm">
+                  <option value="Osteopatia Integrada">Osteopatia Integrada</option>
+                  <option value="Dores na Coluna / Hérnia de Disco">Dores na Coluna / Hérnia de Disco</option>
+                  <option value="DTM / Bruxismo / Dores na Mandíbula">DTM / Bruxismo / Dores na Mandíbula</option>
+                  <option value="Fisioterapia Traumato-Ortopédica">Fisioterapia Traumato-Ortopédica</option>
+                  <option value="Reabilitação Postural &amp; Mobilidade">Reabilitação Postural &amp; Mobilidade</option>
+                  <option value="Fisioterapia Preventiva &amp; Longevidade">Fisioterapia Preventiva &amp; Longevidade</option>
+                  <option value="Outro Motivo">Outro Motivo</option>
+                </select>
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="shift" class="block text-xs font-semibold text-ink-heading">Melhor Turno</label>
+                <select id="shift" class="w-full px-3.5 py-2.5 rounded-[3px] bg-white border border-brand-border text-ink-heading focus:outline-none focus:border-brand-royal text-sm">
+                  <option value="Manhã (10:00 às 12:00)">Manhã (10:00 às 12:00)</option>
+                  <option value="Tarde (13:30 às 18:00)">Tarde (13:30 às 18:00)</option>
+                  <option value="Qualquer horário disponível">Qualquer horário disponível</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="space-y-1.5">
+              <label for="message" class="block text-xs font-semibold text-ink-heading">O que você sente? (Opcional)</label>
+              <textarea id="message" rows="2" placeholder="Descreva brevemente onde dói e há quanto tempo..." class="w-full px-3.5 py-2.5 rounded-[3px] bg-white border border-brand-border text-ink-heading placeholder-ink-subtle focus:outline-none focus:border-brand-royal text-sm"></textarea>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+              <span class="text-xs text-ink-muted">Retorno rápido em horário comercial (10:00 às 18:00).</span>
+              <button type="submit" class="px-6 py-3 bg-brand-royal hover:bg-brand-navy text-white font-medium text-sm rounded-[3px] transition-colors shrink-0">
+                Solicitar horário via WhatsApp &rarr;
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-brand-navy text-slate-300 text-xs py-10">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-white/10">
+
+        <div class="md:col-span-6 space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-10 bg-white p-1 flex items-center justify-center shrink-0 rounded-[2px]">
+              <img src="assets/logo.png" alt="Logo Dra. Gracieli Sari" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <span class="font-serif text-lg font-semibold text-white block leading-tight">Dra. Gracieli Sari</span>
+              <span class="text-[10px] uppercase tracking-[0.14em] text-sky-300">Fisioterapia &amp; Osteopatia Clínica</span>
+            </div>
+          </div>
+          <p class="text-slate-300 leading-relaxed max-w-md">
+            Fisioterapia e Osteopatia com atenção às mulheres, às suas rotinas e às diferentes fases da vida. Atendimento individual no Moinhos de Vento, em Porto Alegre.
+          </p>
+          <a href="https://www.instagram.com/dra.gracielisari/" target="_blank" rel="noopener noreferrer" class="inline-block text-sky-200 hover:text-white underline underline-offset-4 transition-colors">
+            @dra.gracielisari no Instagram &rarr;
+          </a>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="font-semibold text-white mb-2.5 uppercase tracking-wider text-[11px]">Navegação</h4>
+          <ul class="space-y-1.5 text-slate-300">
+            <li><a href="#especialidades" class="hover:text-white transition-colors">Especialidades</a></li>
+            <li><a href="#metodo" class="hover:text-white transition-colors">Atendimento</a></li>
+            <li><a href="#sobre" class="hover:text-white transition-colors">Sobre a Dra. Gracieli</a></li>
+            <li><a href="#conteudos" class="hover:text-white transition-colors">Conteúdos</a></li>
+            <li><a href="#depoimentos" class="hover:text-white transition-colors">Relatos</a></li>
+            <li><a href="#localizacao" class="hover:text-white transition-colors">Localização</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-3">
+          <h4 class="font-semibold text-white mb-2.5 uppercase tracking-wider text-[11px]">Consultório</h4>
+          <ul class="space-y-1.5 text-slate-300">
+            <li>Rua Dona Laura, 228 - Sala 207</li>
+            <li>Edifício Costa Brava &middot; Moinhos de Vento</li>
+            <li>Porto Alegre - RS &bull; CEP 90430-090</li>
+            <li class="pt-1 text-white">WhatsApp: (51) 99949-1229</li>
+            <li>Telefone: (51) 99975-7989</li>
+            <li>Seg a Sex: 10:00 às 18:00</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-slate-400 gap-2">
+        <p>&copy; 2026 Dra. Gracieli Sari. Todos os direitos reservados.</p>
+        <p>CREFITO-5 nº 166020-F &bull; Feevale C-4229-RS &bull; DO RBrO 185</p>
+      </div>
+    </div>
+  </footer>
+
+  <aside aria-label="Contato Rápido WhatsApp">
+    <a
+      id="floating-whatsapp"
+      href="https://wa.me/5551999491229?text=Ol%C3%A1%2C%20Dra.%20Gracieli!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20agendamento%20de%20consulta."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 bg-brand-royal hover:bg-brand-navy text-white text-xs sm:text-sm font-medium py-3 px-4 rounded-[3px] shadow-lg border border-white/20 transition-colors focus:outline-none focus:ring-2 focus:ring-brand-cerulean"
+      aria-label="Agendar no WhatsApp">
+      <svg class="w-4 h-4 text-sky-200 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
